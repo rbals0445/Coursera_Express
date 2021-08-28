@@ -1,7 +1,5 @@
-var rect = {
-    perimeter : (x,y) => (2*(x+y)),
-    area : (x,y) => (x*y),
-};
+var rect = require("./rectangle");
+//import { perimeter } from "./rectangle";
 
 function solveRect(l,b) {
     console.log("Solving for rectangle with l = " + l + " and b = " + b);
@@ -11,7 +9,7 @@ function solveRect(l,b) {
         console.log("The area of the rectangle is "+ rect.area(l,b));
         console.log("The perimeter of the rectagle is "+ rect.perimeter(l,b));
     }
-
+    //console.log("tjis "+ perimeter(l,b));
 }
 solveRect(2,4);
 solveRect(3,5);
